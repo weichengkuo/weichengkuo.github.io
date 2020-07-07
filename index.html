@@ -47,6 +47,32 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="mask2cad_before()" onmouseover="mask2cad_after()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='mask2cad_after' class='hidden'><img src="images/mask2cad-after.png" width="160" height="135"></div>
+              <div id='mask2cad_before'><img src="images/mask2cad-before.png" width="160" height="135"></div>
+              <script type="text/javascript">
+                function mask2cad_after() {
+                  document.getElementById('mask2cad_after').style.display = 'inline';
+                  document.getElementById('mask2cad_before').style.display = 'none';
+                }
+                function mask2cad_before() {
+                  document.getElementById('mask2cad_after').style.display = 'none';
+                  document.getElementById('mask2cad_before').style.display = 'inline';
+                }
+                mask2cad_before()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Mask2CAD: 3D Shape Prediction by Learning to Segment and Retrieve</papertitle>
+              <br>
+              <strong>Weicheng Kuo</strong>, <a href="https://research.google/people/AneliaAngelova/">Anelia Angelova</a>, <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>, <a href="https://www.3dunderstanding.org/team.html">Angela Dai</a>
+              <br>
+              <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Spotlight Presentation)</strong></font>
+              <br>
+              Paper and code to be released.
+            </td>
+          </tr>
           <tr onmouseout="pnas_before()" onmouseover="pnas_after()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div id='pnas_after' class='hidden'><img src="images/hemorrhage-after-v2.jpg" width="135" height="160"></div>
